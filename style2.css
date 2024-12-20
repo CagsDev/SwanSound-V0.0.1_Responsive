@@ -18,8 +18,8 @@ body {
     font-family: "Dancing Script", cursive;
     color: #fff;
     float: left;
-    font-size: 27px;
-    margin-bottom: 50px;
+    font-size: 20px;
+    margin-bottom: 70px;
 }
 
 .ustDiv-1 {
@@ -33,7 +33,7 @@ body {
 }
 
 #logo-3 {
-    width: 15%;
+    width: 10%;
 }
 
 .ulmenu {
@@ -42,7 +42,7 @@ body {
     list-style: none;
     flex: 1; 
     justify-content: center;
-    gap: 20px; 
+    gap: 30px; 
 }
 
 .ulmenu li {
@@ -62,7 +62,7 @@ body {
 }
 
 .search-box {
-    width: 200px;
+    width: 150px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -114,4 +114,47 @@ body {
     float: left;
     width:570px;
     margin-top: 10px;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+
+.search-box {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.search-button {
+    padding: 10px;
+    background-color: #5a9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.search-button:hover {
+    background-color: #48a;
+}
+
+
+.highlight {
+    background-color: yellow;
+}
+
+
+.long-content {
+    height: 1000px;
+    margin-bottom: 20px;
 }
