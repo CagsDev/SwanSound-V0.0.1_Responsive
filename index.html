@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
     <title>SwanSound</title>
+    <style>
+        .playing {
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px #fff;
+        }
+    </style>
 </head>
 <body>
 
@@ -12,114 +18,76 @@
         <img src="logo3.png" id="logo-3">
         <div id="swansound">Swan Sound</div>
         <ul class="ulmenu">
-            <li class="ustMenu">Ana Sayfa</li>
-            <li class="ustMenu">Listeler</li>
-            <li class="ustMenu">Albümler</li>
-            <li class="ustMenu">
-                <li class="search-container">
-                    <div class="search-container">
-                        <input type="text" class="search-box" id="searchInput" placeholder="Arama yap...">
-                        <button class="search-button" onclick="searchFunction()">Ara</button>
-                    </div>
-                </li>
+            <li class="search-container">
+                <div class="search-container">
+                    <input type="text" class="search-box" id="searchInput" placeholder="Arama yap...">
+                    <button class="search-button" onclick="searchFunction()">Ara</button>
+                </div>
             </li>
         </ul>
     </div>
 
-    <!-- icerıkler -->
-     
-<div id="content"> <!--ASLA SİLİNMEYECEK-->
-        
-    <p class="myList-baslik">Cag's List</p>
-    <br>
-    <div class="anaKutu">
+    <div id="content"> <!--ASLA SİLİNMEYECEK-->
+        <p class="myList-baslik">Cag's List</p>
+        <br>
+        <div class="anaKutu">
+            <div class="sarki-kutusu">
+                <img src="Ceza_-_Med_Cezir.jpg" id="med-cezir-foto">
+                <p id="med-cezir-id">CEZA - Med Cezir</p>
+                <audio controls class="pl-sarki">
+                    <source src="CEZA - Med Cezir (Official Audio).mp3" type="audio/mpeg">
+                </audio>
+            </div>
 
-        <img src="Ceza_-_Med_Cezir.jpg" alt="" class="album-foto">
-        <br>
-        <br>
-        <p class="sarki-baslik">CEZA - Med Cezir</p>
-        <br>
-        <br>
-        <audio controls class="pl-sarki">
-            <source src="CEZA - Med Cezir (Official Audio).mp3" type="audio/mpeg" class="pl-sarki">
-        </audio>
+            <div class="sarki-kutusu">
+                <img src="suspus.jpg" id="suspus-foto">
+                <p id="kime-anlatsam-id">CEZA - Kime Anlatsam</p>
+                <audio controls class="pl-sarki">
+                    <source src="Ceza - Kime Anlatsam - Official Audio.mp3" type="audio/mpeg">
+                </audio>
+            </div>
 
-        <br><br><br><br>
+            <div class="sarki-kutusu">
+                <img src="cubuklu-yasar.PNG" id="alidayi-foto">
+                <p id="cubuklu-yasar-id">Çubuklu Yaşar - Ali Dayı</p>
+                <audio controls class="pl-sarki">
+                    <source src="Çubuklu Yaşar   Ali Dayı.mp3" type="audio/mpeg">
+                </audio>
+            </div>
 
-        <img src="suspus.jpg" alt="" class="album-foto">
-        <br>
-        <br>
-        <p class="sarki-baslik">CEZA - Kime Anlatsam</p>
-        <br>
-        <br>
-        <audio controls class="pl-sarki">
-            <source src="Ceza - Kime Anlatsam - Official Audio.mp3" type="audio/mpeg" class="pl-sarki">
-        </audio>
+            <div class="sarki-kutusu">
+                <img src="night-witches.jpeg" id="night-witches-foto">
+                <p id="night-witches-id">Sabaton - Night Witches</p>
+                <audio controls class="pl-sarki">
+                    <source src="SABATON - Night Witches (Official Lyric Video).mp3" type="audio/mpeg">
+                </audio>
+            </div>
 
-        <br><br><br><br>
+            <div class="sarki-kutusu">
+                <img src="onuncukoy.jpg" id="onuncukoy-foto">
+                <p id="bi-minik-mic">CEZA - Bir Minik Mikrofon</p>
+                <audio controls class="pl-sarki">
+                    <source src="Ceza - Bir Minik Mikrofon - Official Audio.mp3" type="audio/mpeg">
+                </audio>
+            </div>
 
-        <img src="cubuklu-yasar.PNG" alt="" class="album-foto">
-        <br>
-        <br>
-        <p class="sarki-baslik">Çubuklu Yaşar - Ali Dayı</p>
-        <br>
-        <br>
-        <audio controls class="pl-sarki">
-            <source src="Çubuklu Yaşar   Ali Dayı.mp3" type="audio/mpeg" class="pl-sarki">
-        </audio>
+            <div class="sarki-kutusu">
+                <img src="diken.jpg" id="diken-foto">
+                <p id="diken-id">Diken - Sana İhtiyacım Var</p>
+                <audio controls class="pl-sarki">
+                    <source src="Sana Ihtiyacim Var.mp3" type="audio/mpeg">
+                </audio>
+            </div>
 
-        <br><br><br><br>
-
-        <img src="night-witches.jpeg" alt="" class="album-foto">
-        <br>
-        <br>
-        <p class="sarki-baslik">Sabaton - Night Witches</p>
-        <br>
-        <br>
-        <audio controls class="pl-sarki">
-            <source src="SABATON - Night Witches (Official Lyric Video).mp3" type="audio/mpeg" class="pl-sarki">
-        </audio>
-
-        <br><br><br><br>
-
-        <img src="onuncukoy.jpg" alt="" class="album-foto">
-        <br>
-        <br>
-        <p class="sarki-baslik">CEZA - Bir Minik Mikrofon</p>
-        <br>
-        <br>
-        <audio controls class="pl-sarki">
-            <source src="Ceza - Bir Minik Mikrofon - Official Audio.mp3" type="audio/mpeg" class="pl-sarki">
-        </audio>
-
-        <br><br><br><br>
-
-        <img src="diken.jpg" alt="" class="album-foto">
-        <br>
-        <br>
-        <p class="sarki-baslik">Diken - Sana İhtiyacım Var</p>
-        <br>
-        <br>
-        <audio controls class="pl-sarki">
-            <source src="Sana Ihtiyacim Var.mp3" type="audio/mpeg" class="pl-sarki">
-        </audio>
-
-        <br><br><br><br>
-
-        <img src="istakoz.jpeg" alt="" class="album-foto">
-        <br>
-        <br>
-        <p class="sarki-baslik">Sagopa K. - Istakoz</p>
-        <br>
-        <br>
-        <audio controls class="pl-sarki">
-            <source src="Istakoz.mp3" type="audio/mpeg" class="pl-sarki">
-        </audio>
+            <div class="sarki-kutusu">
+                <img src="istakoz.jpeg" id="istakoz-foto">
+                <p id="istakoz-id">Sagopa K. - Istakoz</p>
+                <audio controls class="pl-sarki">
+                    <source src="Istakoz.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
     </div>
-    <br><br><br><br>
-
-
-</div>
 
     <script src="app.js"></script>
 </body>

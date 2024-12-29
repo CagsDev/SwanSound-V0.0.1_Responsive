@@ -4,7 +4,6 @@ function searchFunction() {
     let content = document.getElementById("content");
     let elements = content.querySelectorAll("*");
 
-    // Önceki arama vurgularını kaldır
     for (let element of elements) {
         if (element.nodeType === Node.ELEMENT_NODE) {
             let textNodes = Array.from(element.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
@@ -14,17 +13,15 @@ function searchFunction() {
         }
     }
 
-    // Arama yap ve ilk eşleşen kelimeye kaydır
     let found = false;
     for (let element of elements) {
         if (element.nodeType === Node.ELEMENT_NODE) {
             let textNodes = Array.from(element.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
             for (let textNode of textNodes) {
-                let originalText = textNode.nodeValue; // Orijinal metni sakla
-                let lowerCaseText = originalText.toLowerCase(); // Arama için küçük harfe dönüştür
+                let originalText = textNode.nodeValue;
+                let lowerCaseText = originalText.toLowerCase(); 
 
                 if (lowerCaseText.includes(searchValue)) {
-                    // Aranan kelimeyi sadece vurgula
                     let highlightedText = originalText.replace(new RegExp(searchValue, 'gi'), (match) => {
                         return `<span class="highlight">${match}</span>`;
                     });
@@ -33,7 +30,6 @@ function searchFunction() {
                     tempSpan.innerHTML = highlightedText;
                     textNode.parentNode.replaceChild(tempSpan, textNode);
 
-                    // İlk bulunan sonucu kaydır
                     if (!found) {
                         tempSpan.scrollIntoView({
                             behavior: 'smooth',
@@ -46,8 +42,33 @@ function searchFunction() {
         }
     }
 
-    // Eğer hiçbir sonuç bulunmadıysa bir uyarı göster
     if (!found) {
         alert("Aranan kelime bulunamadı.");
     }
 }
+
+const audioElements = document.querySelectorAll(".pl-sarki");
+
+audioElements.forEach((audio, index) => {
+    audio.addEventListener("play", () => {
+        audioElements.forEach(a => {
+            if (a !== audio) {
+                a.pause(); 
+                a.currentTime = 0; 
+            }
+        });
+        audioElements.forEach(a => a.classList.remove("playing"));
+        audio.classList.add("playing");
+    });
+
+    audio.addEventListener("ended", () => {
+        const nextAudio = audioElements[index + 1];
+        if (nextAudio) {
+            nextAudio.play();
+            nextAudio.scrollIntoView({ behavior: "smooth", block: "center" });
+        } else {
+            audioElements[0].play();
+            audioElements[0].scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+    });
+});
