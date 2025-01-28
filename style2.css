@@ -21,8 +21,9 @@
         font-family: "Dancing Script", cursive;
         color: #fff;
         float: left;
-        font-size: 20px;
+        font-size: 30px;
         margin-bottom: 70px;
+        margin-right: 90px;
     }
     
     .ustDiv-1 {
@@ -36,16 +37,11 @@
     }
     
     #logo-3 {
-        width: 10%;
+        width: 20%;
     }
     
     .ulmenu {
-        display: flex;
-        align-items: center;
-        list-style: none;
-        flex: 1; 
-        justify-content: center;
-        gap: 30px; 
+        float: right;
     }
     
     .ulmenu li {
@@ -56,12 +52,6 @@
     
     .ulmenu li:hover {
         text-decoration: underline;
-    }
-    
-    .search-container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
     }
     
     .search-box {
@@ -88,8 +78,7 @@
         color: #B6BBC4;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 30px;
-        margin-left: 10px;
-        margin-top: 100px;
+        float: left;
     }
     
     .anaKutu {
@@ -97,6 +86,7 @@
         height: 13000px;
         background-color: #161A30;
         border-radius: 10px;
+        margin-top: 30px;
     }
     
     .album-foto {
@@ -128,11 +118,13 @@
         justify-content: center;
         align-items: center;
         margin-top: 0px;
+        float: right;
     }
     
     
     .search-box {
         width: 150px;
+        height: 30px;
         padding: 10px;
         border-radius: 5px;
         border: 1px solid #ccc;
@@ -140,12 +132,12 @@
     
     
     .search-button {
-        padding: 10px;
+        padding: 7.5px;
         background-color: #5a9;
         color: white;
         border: none;
         border-radius: 5px;
-        margin-left: 10px;
+        margin-right: 10px;
         cursor: pointer;
     }
     
@@ -156,13 +148,21 @@
     
     
     .highlight {
-        background-color: yellow;
+        background-color: #5a9;
     }
     
     
     .long-content {
         height: 1000px;
         margin-bottom: 20px;
+    }
+
+    .album-foto {
+        width: 100px;
+        height: 100px;
+        margin-left: 10px;
+        margin-top: 20px;
+        float: left;
     }
 
     #med-cezir-foto {
@@ -177,7 +177,7 @@
         font-size: 15px;
         color: #B6BBC4;
         float: right;
-        margin-top: 20px;
+        margin-top: 60px;
         margin-right: 110px;
         color: #fff;
         font-weight: bold;
@@ -190,12 +190,12 @@
         margin-top: 20px;
         float: left;
     }
-
+    
     #kime-anlatsam-id {
         font-size: 15px;
         color: #B6BBC4;
         float: right;
-        margin-top: 20px;
+        margin-top: 60px;
         margin-right: 70px;
         color: #fff;
         font-weight: bold;
@@ -213,7 +213,7 @@
         font-size: 15px;
         color: #B6BBC4;
         float: right;
-        margin-top: 20px;
+        margin-top: 60px;
         margin-right: 60px;
         color: #fff;
         font-weight: bold;
@@ -231,7 +231,7 @@
         font-size: 15px;
         color: #B6BBC4;
         float: right;
-        margin-top: 20px;
+        margin-top: 60px;
         margin-right: 60px;
         color: #fff;
         font-weight: bold;
@@ -249,7 +249,7 @@
         font-size: 15px;
         color: #B6BBC4;
         float: right;
-        margin-top: 20px;
+        margin-top: 60px;
         margin-right: 46px;
         color: #fff;
         font-weight: bold;
@@ -267,7 +267,7 @@
         font-size: 15px;
         color: #B6BBC4;
         float: right;
-        margin-top: 20px;
+        margin-top: 60px;
         margin-right: 42px;
         color: #fff;
         font-weight: bold;
@@ -285,8 +285,18 @@
         font-size: 15px;
         color: #B6BBC4;
         float: right;
-        margin-top: 20px;
+        margin-top: 60px;
         margin-right: 93px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    #orhun-id {
+        font-size: 15px;
+        color: #B6BBC4;
+        float: right;
+        margin-top: 60px;
+        margin-right: 60px;
         color: #fff;
         font-weight: bold;
     }

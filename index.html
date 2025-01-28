@@ -18,17 +18,27 @@
         <img src="logo3.png" id="logo-3">
         <div id="swansound">Swan Sound</div>
         <ul class="ulmenu">
-            <li class="search-container">
-                <div class="search-container">
-                    <input type="text" class="search-box" id="searchInput" placeholder="Arama yap...">
-                    <button class="search-button" onclick="searchFunction()">Ara</button>
-                </div>
-            </li>
+            <li>Listeler</li>
+            <br>
+            <li>Albümler</li>
+            <br>
+            <li>En çok Dinlenilenler</li>
         </ul>
     </div>
 
     <div id="content"> <!--ASLA SİLİNMEYECEK-->
-        <p class="myList-baslik">Cag's List</p>
+        <div class="margin-div" style="margin-top: 50px;">
+
+            <p class="myList-baslik">Cag's List</p>
+        <li class="search-container">
+            <div class="search-container">
+                <input type="text" class="search-box" id="searchInput" placeholder="Arama yap...">
+                <button class="search-button" onclick="searchFunction()">Ara</button>
+            </div>
+        </li>
+
+        </div>
+        
         <br>
         <div class="anaKutu">
             <div class="sarki-kutusu">
@@ -86,9 +96,18 @@
                     <source src="Istakoz.mp3" type="audio/mpeg">
                 </audio>
             </div>
+
+            <div class="sarki-kutusu">
+                <img src="gruporhun.jpg" id="diken-foto">
+                <p id="orhun-id">Alay Marşı - Grup Orhun</p>
+                <audio controls class="pl-sarki">
+                    <source src="ALAY MARSI -Grup ORHUN.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            
+
         </div>
     </div>
-
     <script src="app.js"></script>
 </body>
 </html>
