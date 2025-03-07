@@ -22,8 +22,8 @@
         color: #fff;
         float: left;
         font-size: 30px;
-        margin-bottom: 70px;
-        margin-right: 90px;
+        margin-bottom: 0px;
+        margin-left: 5px;
     }
     
     .ustDiv-1 {
@@ -53,6 +53,16 @@
     .ulmenu li:hover {
         text-decoration: underline;
     }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: lightgray;
+    }
+    
     
     .search-box {
         width: 150px;
@@ -83,7 +93,7 @@
     
     .anaKutu {
 
-        height: 13000px;
+        height: 1300px;
         background-color: #161A30;
         border-radius: 10px;
         margin-top: 30px;
@@ -123,7 +133,7 @@
     
     
     .search-box {
-        width: 150px;
+        width: 295px;
         height: 30px;
         padding: 10px;
         border-radius: 5px;
@@ -299,5 +309,86 @@
         margin-right: 60px;
         color: #fff;
         font-weight: bold;
+    }
+
+    .populer-genres-header {
+        color: #B6BBC4;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        float: left;
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+
+    .muzik-tur-foto {
+        height: 115px;
+        width: 120px;
+        margin: 10px;
+        float: left;
+        border-radius: 5px;
+    }
+
+    .muzik-tur-text {
+        float: right;
+        color: #B6BBC4;
+        font-size: 25px;
+        margin-top: 40px;
+        margin-right: 55px;
+    }
+
+    .muzik-tur-artists {
+        float: right;
+        font-size: 11px;
+        color: #ccc;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    .rap-baslik {
+        float: right;
+        color: #B6BBC4;
+        font-size: 25px;
+        margin-top: 40px;
+        margin-right: 167px;
+    }
+
+    .rap-artists {
+        float: right;
+        font-size: 11px;
+        color: #ccc;
+        margin-right: 18px;
+        margin-top: 5px;
+    }
+
+    .metal-baslik {
+        float: right;
+        color: #B6BBC4;
+        font-size: 25px;
+        margin-top: 40px;
+        margin-right: 151px;
+    }
+
+    .metal-artists {
+        float: right;
+        font-size: 11px;
+        color: #ccc;
+        margin-right: 32px;
+        margin-top: 5px;
+    }
+
+    .arabesk-baslik {
+        float: right;
+        color: #B6BBC4;
+        font-size: 25px;
+        margin-top: 40px;
+        margin-right: 119px;
+    }
+
+    .arabesk-artists {
+        float: right;
+        font-size: 11px;
+        color: #ccc;
+        margin-top: 5px;
     }
   }
