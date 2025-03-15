@@ -89,11 +89,20 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 30px;
         float: left;
+        margin-left: 10px;
     }
     
     .anaKutu {
 
-        height: 1300px;
+        height: 1550px;
+        background-color: #161A30;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    .anaKutu-List {
+
+        height: 1600px;
         background-color: #161A30;
         border-radius: 10px;
         margin-top: 30px;
@@ -331,7 +340,7 @@
 
     .muzik-tur-text {
         float: right;
-        color: #B6BBC4;
+        color: #ffffff;
         font-size: 25px;
         margin-top: 40px;
         margin-right: 55px;
@@ -347,7 +356,7 @@
 
     .rap-baslik {
         float: right;
-        color: #B6BBC4;
+        color: #ffffff;
         font-size: 25px;
         margin-top: 40px;
         margin-right: 167px;
@@ -363,7 +372,7 @@
 
     .metal-baslik {
         float: right;
-        color: #B6BBC4;
+        color: #ffffff;
         font-size: 25px;
         margin-top: 40px;
         margin-right: 151px;
@@ -379,7 +388,7 @@
 
     .arabesk-baslik {
         float: right;
-        color: #B6BBC4;
+        color: #ffffff;
         font-size: 25px;
         margin-top: 40px;
         margin-right: 119px;
@@ -391,4 +400,76 @@
         color: #ccc;
         margin-top: 5px;
     }
-  }
+
+    .top-lists-header {
+        color: #B6BBC4;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        float: left;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    .pl-foto {
+        height: 120px;
+        width: 120px;
+        margin: 10px;
+        float: left;
+        border-radius: 5px;
+    }
+
+    .pl-baslik {
+        float: left;
+        color: #ffffff;
+        font-size: 18px;
+        margin-top: 50px;
+        margin-right: 19px;
+    }
+    
+    .pl-creator {
+        float: right;
+        font-size: 11px;
+        color: #B6BBC4;
+        margin-top: 15px;
+        margin-right: 148px;
+    }
+
+    .pl-tragedya {
+        float: right;
+        font-size: 11px;
+        color: #B6BBC4;
+        margin-top: 15px;
+        margin-right: 174px;
+    }
+
+    .pl-laikatak {
+        float: left;
+        color: #ffffff;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+
+    .pl-sudis {
+        float: right;
+        font-size: 11px;
+        color: #B6BBC4;
+        margin-top: 15px;
+        margin-right: 192px;
+    }
+
+    .pl-creator-ceza {
+        float: right;
+        font-size: 11px;
+        color: #B6BBC4;
+        margin-top: 15px;
+        margin-right: 140px;
+    }
+
+    .pl-creator-baroo {
+        float: right;
+        font-size: 11px;
+        color: #B6BBC4;
+        margin-top: 15px;
+        margin-right: 187px;
+    }
+}
