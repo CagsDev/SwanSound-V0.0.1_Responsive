@@ -2,10 +2,9 @@
 
 /* REPOSNIVE TASARIMIN CSS KODLARI */
 
-@media (max-width: 360px) {
+@media (max-width: 414px) {
     
     * {
-        max-width: 360px;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -23,11 +22,12 @@
         float: left;
         font-size: 30px;
         margin-bottom: 0px;
-        margin-left: 5px;
+        margin-right: 50px;
     }
     
     .ustDiv-1 {
-        max-width:  100%;
+        width: 100%;
+        border-radius: 10px;
         height: 170px;
         background-color: #161A30;
         display: flex;
@@ -94,7 +94,7 @@
     
     .anaKutu {
 
-        height: 1550px;
+        height: 2200px;
         background-color: #161A30;
         border-radius: 10px;
         margin-top: 30px;
@@ -427,7 +427,7 @@
     }
     
     .pl-creator {
-        float: right;
+        float: left;
         font-size: 11px;
         color: #B6BBC4;
         margin-top: 15px;
@@ -435,7 +435,7 @@
     }
 
     .pl-tragedya {
-        float: right;
+        float: left;
         font-size: 11px;
         color: #B6BBC4;
         margin-top: 15px;
@@ -450,7 +450,7 @@
     }
 
     .pl-sudis {
-        float: right;
+        float: left;
         font-size: 11px;
         color: #B6BBC4;
         margin-top: 15px;
@@ -458,7 +458,7 @@
     }
 
     .pl-creator-ceza {
-        float: right;
+        float: left;
         font-size: 11px;
         color: #B6BBC4;
         margin-top: 15px;
@@ -466,10 +466,65 @@
     }
 
     .pl-creator-baroo {
-        float: right;
+        float: left;
         font-size: 11px;
         color: #B6BBC4;
         margin-top: 15px;
         margin-right: 187px;
+    }
+
+    .pl-creator-caglar {
+        float: left;
+        font-size: 11px;
+        color: #B6BBC4;
+        margin-top: 15px;
+        margin-right: 185px;
+    }
+
+    .pl-creator-sudis {
+        float: left;
+        font-size: 11px;
+        color: #B6BBC4;
+        margin-top: 15px;
+        margin-right: 189px;
+    }
+
+    .pr-msc {
+        width: 100px;
+        height: 100px;
+        margin-left: 10px;
+        margin-top: 20px;
+        float: left;
+    }
+
+    .adrenalin {
+        font-size: 15px;
+        color: #B6BBC4;
+        float: left;
+        margin-top: 60px;
+        margin-left: 10px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .alt-kutu {
+        width: 100%;
+        height: 100px;
+        background-color: #161A30;
+        border-radius: 10px;
+    }
+
+    .alt-buton {
+        width: 50%;
+        height: 30%;
+        background-color: #5a9;;
+        border-radius: 10px;
+        float: right;
+        margin-top: 7.5%;
+        margin-right: 25%;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-weight: bolder;
     }
 }

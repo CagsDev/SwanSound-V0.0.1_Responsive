@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>SwanSound Mobile - Protest RAP</title>
+    <style>
+        .playing {
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ustDiv-1">
+        <img src="media/logo3.png" id="logo-3">
+        <div id="swansound">Swan Sound</div>
+        <ul class="ulmenu">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <br>
+            <li>Listeler (Cag's)</li>
+            <br>
+            <li>Albümler</li>
+            <br>
+            <li>En çok Dinlenilenler</li>
+        </ul>
+    </div>
+
+    <div id="content"> <!--ASLA SİLİNMEYECEK-->
+        <div class="margin-div" style="margin-top: 50px;">
+
+        <li class="search-container">
+            <div class="search-container">
+                <input type="text" class="search-box" id="searchInput" placeholder="Arama yap...">
+                <button class="search-button" onclick="searchFunction()">Ara</button>
+            </div>
+        </li>
+
+        </div>
+        
+        <br>
+        <div class="anaKutu-List">
+            <br>
+            <p class="myList-baslik">minimal metalik babuş</p>
+            <br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/ariyorum.jpg" class="pr-msc">
+                <p class="adrenalin">YMKTB - Ariyorum<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/YouMayKisstheBrideft.Main-De-Gloire-ARIYORUM(EdisCover)(ymktbfamily)LiveVideo.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/carevar.jpg" class="pr-msc">
+                <p class="adrenalin">Şiirbaz & Hidra & İnfaz & Joker...</p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Şiirbaz  Hidra  İnfaz  Joker  Kafi  Kdr - ÇARE VAR Prod.Beat By İnfaz (Official Audio).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/sayınturk.png" class="pr-msc">
+                <p class="adrenalin">Şehinşah - Sayın Türk</p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Şehinşah  Sayın Türk Typography Video.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/proletarya.png" class="pr-msc">
+                <p class="adrenalin">Sokrat St feat. Şanışer - Proleta...</p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Sokrat St  feat. Şanışer - Proletarya (Official Video).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+         
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
