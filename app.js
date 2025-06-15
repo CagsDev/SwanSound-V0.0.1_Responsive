@@ -74,5 +74,5 @@ audioElements.forEach((audio, index) => {
 });
 
 function labenlaCags() {
-  alert("SwanSound, sınırlı kişilerin erişim iznine sahip olduğu, Çağlar C. tarafından GitHub profilini zenginleştirmek amacıyla tasarlanmış bir sitedir")
+  alert("SwanSound, sınırlı kişilerin erişim iznine sahip olduğu, Çağlar C. tarafından GitHub profilini zenginleştirmek amacıyla tasarlanmış bir sitedir. Herhangi bir gelir elde edilmemektedir!")
 }

@@ -1,0 +1,9 @@
+/*Egea List sayfasını sadece babam için yaptım. Babamın telefonunda şarkılar çalmıyordu ben de o kullansın diye ona özel bir sayfa yaptım*/
+
+@media (max-width: 414px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}

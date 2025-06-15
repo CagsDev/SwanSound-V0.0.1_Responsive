@@ -1,0 +1,748 @@
+<!---Egea List sayfasını sadece babam için yaptım. Babamın telefonunda şarkılar çalmıyordu ben de o kullansın diye ona özel bir sayfa yaptım--->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>SwanSound Mobile - Protest RAP</title>
+    <style>
+        .playing {
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ustDiv-1">
+        <img src="media/logo3.png" id="logo-3">
+        <div id="swansound">Swan Sound</div>
+        <ul class="ulmenu">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <br>
+            <li>Listeler</li>
+            <br>
+            <li>Albümler</li>
+            <br>
+            <li>En çok Dinlenilenler</li>
+        </ul>
+    </div>
+
+    <div id="content"> <!--ASLA SİLİNMEYECEK-->
+        <div class="margin-div" style="margin-top: 50px;">
+
+        <li class="search-container">
+            <div class="search-container">
+                <input type="text" class="search-box" id="searchInput" placeholder="Arama yap...">
+                <button class="search-button" onclick="searchFunction()">Ara</button>
+            </div>
+        </li>
+
+        </div>
+        
+        <br>
+        <div class="anaKutu-egea">
+            <br>
+            <p class="myList-baslik">Egea Listesi</p>
+            <br><br><br>
+            
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Ahmet Kaya - Beni Bul Anne<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Ahmet Kaya - Beni Bul Anne _Arabesk Trap Remix_(_BBu4JkvLlFY_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Ahmet Kaya - Giderim<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Ahmet Kaya - Giderim (Trap Remix) (SliderRemix)(_Hzggec3Bd4o_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Ankara Havaları - Ali Dayı<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Ankara Havaları _ 3 _ - Ali Dayı.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Bahçe Duvarından Aştım<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/ANKARALI İBOCAN - Bahçe Duvarından Aştım.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Aynur Polat - Bir Zalim<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Aynur Polat - Bir Zalim(_sPjRgSHooBk_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Aynur Polat - Çilem Doldu mu<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Aynur Polat - Çilem Doldumu(_Zh75ElmZIm4_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Senin İçin Bu Alemi Yakarım<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Aynur Polat - Senin İçin Bu Alemi Yakarım Remix (C Musical - AmiR)(_iAUbRGBo6CA_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Aysel Yılmaz - Dar Geliyor<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Aysel yılmaz dar geliyor 2015.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Azer Bülbül - Nasıl Bir Sene<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Azer Bülbül - Nasıl Bir Sene(_quLzsWjeIME_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Sarı Çizmeli Mehmet Ağa<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Barış Manço - Sarı Çizmeli Mehmet Ağa.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Barış Manço - Yaz Dostum<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Barış Manço _ Yaz Dostum_.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">bir yar sevdim pişmanım<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/BİR YAR SEVDİM PİŞMANIM ERKAN ACAR.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Bozuldu Gönlümün Bağları<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Bozuldu Gönlümün Bağları (Remix) Bass(_Q-5KnkRQYeU_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Akşam Olur Karanlığa Kalırsın<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Cem Adrian & Zeynep Karababa - Akşam Olur Karanlığa Kalırsın (Official Audio).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Ceylan - Sen Sivas'ı Seyret<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/YAĞIZ _SEN SİVASI SEYRET_.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">ÇARESİZİM ÇARESİZ<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/ÇARESİZİM  ÇARESİZ  SÜPER DAVULCU.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Dardayım ft. Gazapizm<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Dardayım _ Ahmet Kaya ft. Gazapizm (MIX) Lyrics (Şarkı Sözleri) _feat. KM PRODS_(_qyaBOEMPORQ_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Dargınım<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Dargınım(_iwSH1c5auv8_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Davul zurna antep parak tarzı<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Davul Zurna antep parak tarzı (offıcial music)(_PYsIFscGd4o_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Dream It Possible<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Dream_It_Possible.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Emmioğlu<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Emmi Oğlu(_veY6LUij-vk_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Ender Balkır - Ruhumda Sızı<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Ender BALKIR -Ruhumda Sızı (Canlı Performans).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Engin Nursani - Amatör<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Fakir ölse şaşan olmaz evi yansa koşan olmaz - Engin nuşrani Amatör 2024(_Te37UH9VT-U_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Zülfü Kaküllerin Amber Misali<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Ferat - Zülfü Kaküllerin Amber Misali _ SIRA SENDE TÜRKİYE.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Dizinde Yatmayı Özledim Anam<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Gül Ahmet (,( DİZİNDE YATMAYI ÖZLEDIM ANAMMM.),) BALIM.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Aman Güzel Yavaş Yürü<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Halodayı (feat. Azer Bülbül) - Aman Güzel Yavaş Yürü (Official Video)(_x6WIaylMrmM_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Eskisi Gibi Değilim Artık<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/HAZAR YILDIZ - ESKİSİ GİBİ DEĞİLİM ARTIK(Trend music)(_p5z4dXYb_Nk_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Dur Leyla<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/hiraizerduş   - dur leyla.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Öf Öf<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Hozan Beşir - Öf Öf - _© 2019 Live Performance_.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Hüseyin Öksüz - Osmaniye<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Hüseyin Öksüz - Osmaniye (2020).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Bir Mumdur Remix<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Ibrahim Tatlises - Bir Mumdur Remix.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Kara Köprü Narlıktır Remix<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/İbrahim Tatlıses - Kara Köprü Narlıktır _ Soner Bülbül Remix _ Tiktok Remix 2023(_WFZ30lQZX5k_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Turlu Turlu<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/İbrahim TatLıses - TurLu TurLu.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Bu Dünyada Üç Şey Vardır<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Ibrahim Tatlises Bu Dünyada Üc Sey Vardir.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Yetiş Ya Muhammed Yetiş Ya Ali<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Ibrahim Tatlises-Yetiş ya Muhammed Yetiş ya Ali.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Üryan Geldim<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/İsmail Altunsaray - Üryan Geldim (Official Video).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Ay Buluta Girmiş<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/IZZET YILDIZHAN AY BULUTA GIRMIS.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Nasihat Anlarsın<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/KAHTALI MIÇE .NASİHAT( ANLARSIN ).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Düşte Gör<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Karamsar Şair - Düşte Gör ( Official Video ) #Yeni(_Mlfr2qf9yLM_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Goçamışın<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Kocamışsın(_cxVUr4yY7iY_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Adaletin Bu Mu Dünya?<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Koray Avcı - Adaletin Bu Mu Dünya (Official Video)(_wt2wOLbRKDA_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Koru Kendini<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Koru Kendini(_4zFGHr-bHa8_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">La Bize Her Yer Angara<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/La Bize Her Yer Angara - Ankaralı Hüseyin - Resmi Klip.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Olum Var<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Mahsun Kirmizigul - olum var.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Ne Aglarsın<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Mahsun kirmizigul Ne Aglarsin.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Yiğit Muhtaç Olmuş Kuru Soğana<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/mahsun kırmızıgü yiğit muhtaç olmuş kuru soğana süper yorum.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Beni Hor Görme<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Mahsun Kırmızıgül - Beni Hor Görme.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Kardeşlik Türküsü<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Mahsun Kırmızıgül - Kardeşlik Türküsü.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Yıkılmadım remix<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Mahsun Kırmızigül - Yıkılmadim (Serdar Özden Remix)(_6Pbz2t06Xro_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Yıkılmadım<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Mahsun Kırmızıgül - Yıkılmadım.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Yoruldum<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Mahsun Kırmızıgül - Yoruldum http___Tvfrekansi.Com.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Adam Kalmamış<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Mehmet Yakar   -  Adam Kalmamış.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Ağrıdı Başım<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Mehmet YAKAR-Ağrıdı Başım Nanay.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Çaresizim çaresiz<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Mustafa Açıkses - Çaresizim Çaresiz.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Arayı Arayı<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Mustafa Özarslan - Arayı Arayı(_UH7lfoGHOXo_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Canım<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Mustafa Topaloglu - Canim.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Tatli Dile Guler Yüze<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Neşet Ertaş - Tatlı Dile Güler Yüze.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Yolcu<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Neşet ERTAŞ - Yolcu.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Osmaniye Antep Hatay Bağlama<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Osmaniye - Antep Sallama Halay Bağlama İle 2023 Oğuzhan Ceyhan(_ZDmMoY2vGkc_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Oyun havası karışık Osmaniye<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Oyun Havası - Karışık -Osmaniye_yobwyYHOPs0_.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Antepten ötedir maraşın yolu<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/ozan coskun antepten otedir marasin yolu.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+            
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Sen Gel Diyorsun<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Ozan Coşkun Sen Gel Diyorsun 2018 Yok Böyle Bir ses.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Ayşe<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Pecenekli Suleyman - Ayse HD 16 9 Orj.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Emmoğlu Peçenekli Sülo<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Peçenekli Süleyman Emmioğlu 2011.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Bahar Gözlüm<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Ramazan Talay - Bahar Gözlüm _ Soner Bülbül Remix _ Hazalım Tiktok Remix.(_go2n0kn_t-w_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">O yar gelir<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Sahmar Haciyev - Ulker Mirzezade O Yar Gelir Klip Remix(_fj2IhfA35z0_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">saraylar yaptırdım<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/saraylar yaptırdım(_vnNhySsnFQo_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Minnet Eylemem<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Selda Bağcan - Minnet Eylemem.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Pilum<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Serdar Ayyıldız feat. Seren Uzun - Pulim.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">YOH YOH<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/TÜRKAN HAZAL  - YOH YOH (Official Video).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Uyan Babam Uyan Kader Utansın<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Uyan Babam Uyan Kader Utansın=SüperrrR DaMaR FEYZOCAN.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Tanrı Türk'e Yar olsun<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/VATAN ne Türkiyedir Türklere,ne Türkistan, VATAN Büyük ve Müebbet bir ülkedir.TURAN.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Sen Sivası seyret<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/YAĞIZ _SEN SİVASI SEYRET_.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Karagözlüm<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Yaren Doğan  - Karagözlüm Ölesim Var.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Karagözlüm<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Murat Kekilli-Karagözlüm.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Gönül Dağı<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Yasin Keleş & Neşet Ertaş - Gönül Dağı (Official Video).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Yanıyom<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Yasin Keleş & Neşet Ertaş - Yanıyorum  _ Official Music Video © 2019 Kalan Müzik _.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Erikdalı<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Yenikentli Nadir - 2007 - Erik Dalı (Albüm).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Harca Koçum<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Yenikentli Nadir - 2007 - Harca Koçum (Albüm).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Dar-ı Dünya<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Yer Üstünde Yeşil Yaprak (Oğuzhan Karakaş Remix ) Cem Yıldız - Dar-ı Dünya (Eşref Rüya)(_uwXhfXqzaaI_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Yiğit Ölmez Kolay kolay<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/YIGIT ÖLMEZ KOLAY KOLAY BEN ÖLMEDIM KI.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sarki-kutusu">
+                <img src="media/def.png" class="pr-msc">
+                <p class="sarki-adi">Yine Gönlüm Hoş Değil<p>
+                <audio controls class="pl-sarki">
+                    <source src="media/Yine Gönlüm Hoş Değil (Trap Remix)(_3ybLm-PV0Uw_).m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

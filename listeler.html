@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SwanSound Mobile</title>
+    <style>
+        .playing {
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ustDiv-1">
+        <img src="media/logo3.png" id="logo-3">
+        <div id="swansound">Swan<br> Sound</div>
+        <ul class="ulmenu">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <br>
+            <li><a href="listeler.html">Listeler</a></li>
+            <br>
+            <li>Albümler</li>
+            <br>
+            <li>En çok Dinlenilenler</li>
+        </ul>
+    </div>
+
+    <div id="content"> <!--ASLA SİLİNMEYECEK-->
+        <div class="margin-div" style="margin-top: 50px;">
+
+        <li class="search-container">
+            <div class="search-container">
+                <input type="text" class="search-box" id="searchInput" placeholder="Arama yap...">
+                <button class="search-button" onclick="searchFunction()">Ara</button>
+            </div>
+        </li>
+
+        </div>
+        
+        <br>
+        <div class="anaKutu-lists">
+            
+            <p class="listeler">Listeler</p>
+            <br><br><br><br><br>
+
+            <div class="top-lists-div">
+                <img class="pl-foto" src="media/rap-muzik.png" alt="My List">
+                <div class="pl-baslik"><a href="newList.html">PROTEST RAP</a></div>
+                <br>
+                <div class="pl-creator-baroo"><i>Çağlar</i></div>
+            </div>
+
+            <br><br><br><br><br><br><br>
+            <div class="top-lists-div">
+                <img class="pl-foto" src="media/cezzza.jpg" alt="">
+                <div class="pl-baslik"><a href="cagslist.html">Cag's List</a></div>
+                <br>
+                <div class="pl-creator-ceza"><i>RapList-cags</i></div>
+            </div>
+
+            <br><br><br><br><br><br><br>
+            <div class="top-lists-div">
+                <img class="pl-foto" src="media/egea_cr_urban.jpg" alt="">
+                <div class="pl-baslik"><a href="egealist.html">Egea Listesi</a></div>
+                <br>
+                <div class="pl-creator-ceza"><i>Caglar</i></div>
+            </div>
+            
+
+
+        </div>
+        <br><br><br><br>
+        <div class="alt-kutu">
+            <button onclick="labenlaCags()" class="alt-buton">NOT!</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
