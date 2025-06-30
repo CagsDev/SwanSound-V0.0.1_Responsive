@@ -19,7 +19,7 @@ function searchFunction() {
             let textNodes = Array.from(element.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
             for (let textNode of textNodes) {
                 let originalText = textNode.nodeValue;
-                let lowerCaseText = originalText.toLowerCase(); 
+                let lowerCaseText = originalText.toLowerCase();
 
                 if (lowerCaseText.includes(searchValue)) {
                     let highlightedText = originalText.replace(new RegExp(searchValue, 'gi'), (match) => {
@@ -47,32 +47,62 @@ function searchFunction() {
     }
 }
 
+let currentAudioIndex = -1;
 const audioElements = document.querySelectorAll(".pl-sarki");
+const songNames = document.querySelectorAll(".sarki-adi");
+
+function updateTitle(index) {
+    if (songNames[index]) {
+        document.title = songNames[index].innerText.trim();
+    }
+}
+
+function playAudioAtIndex(index) {
+    if (index >= 0 && index < audioElements.length) {
+        audioElements.forEach(audio => {
+            audio.pause();
+            audio.currentTime = 0;
+            audio.classList.remove("playing");
+        });
+
+        audioElements[index].play();
+        audioElements[index].classList.add("playing");
+        audioElements[index].scrollIntoView({ behavior: "smooth", block: "center" });
+        currentAudioIndex = index;
+        updateTitle(index);
+    }
+}
+
+function playNext() {
+    const nextIndex = (currentAudioIndex + 1) % audioElements.length;
+    playAudioAtIndex(nextIndex);
+}
+
+function playPrevious() {
+    const prevIndex = (currentAudioIndex - 1 + audioElements.length) % audioElements.length;
+    playAudioAtIndex(prevIndex);
+}
 
 audioElements.forEach((audio, index) => {
     audio.addEventListener("play", () => {
-        audioElements.forEach(a => {
+        audioElements.forEach((a, i) => {
             if (a !== audio) {
-                a.pause(); 
-                a.currentTime = 0; 
+                a.pause();
+                a.currentTime = 0;
+                a.classList.remove("playing");
+            } else {
+                currentAudioIndex = i;
+                updateTitle(i);
+                a.classList.add("playing");
             }
         });
-        audioElements.forEach(a => a.classList.remove("playing"));
-        audio.classList.add("playing");
     });
 
     audio.addEventListener("ended", () => {
-        const nextAudio = audioElements[index + 1];
-        if (nextAudio) {
-            nextAudio.play();
-            nextAudio.scrollIntoView({ behavior: "smooth", block: "center" });
-        } else {
-            audioElements[0].play();
-            audioElements[0].scrollIntoView({ behavior: "smooth", block: "center" });
-        }
+        playNext();
     });
 });
 
 function labenlaCags() {
-  alert("SwanSound, sınırlı kişilerin erişim iznine sahip olduğu, Çağlar C. tarafından GitHub profilini zenginleştirmek amacıyla tasarlanmış bir sitedir. Herhangi bir gelir elde edilmemektedir!")
+  alert("SwanSound, sınırlı kişilerin erişim iznine sahip olduğu, Çağlar C. tarafından GitHub profilini zenginleştirmek amacıyla tasarlanmış bir sitedir. Herhangi bir gelir elde edilmemektedir!");
 }
